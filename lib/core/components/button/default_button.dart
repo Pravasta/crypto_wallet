@@ -9,13 +9,13 @@ class DefaultButton extends StatelessWidget {
     required this.title,
     this.titleColor = AppColors.blackColor,
     this.width = double.infinity,
-    this.height = 40,
+    this.height = 50,
     this.backgroundColor,
     this.borderColor = AppColors.primaryColor,
     required this.onTap,
     this.elevation = 3,
     this.iconUrl,
-    this.borderRadius = 30,
+    this.borderRadius = 20,
   });
 
   final String title;
@@ -43,13 +43,12 @@ class DefaultButton extends StatelessWidget {
       onPressed: onTap,
       child: iconUrl != null
           ? Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Image.asset(
                   iconUrl!,
                   width: 20,
                 ),
-                const SizedBox(width: 10),
                 Text(
                   title,
                   style: AppText.text16.copyWith(
@@ -57,6 +56,7 @@ class DefaultButton extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
+                SizedBox(),
               ],
             )
           : Text(

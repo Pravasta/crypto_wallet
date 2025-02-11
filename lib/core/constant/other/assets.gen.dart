@@ -25,6 +25,14 @@ class $AssetsIconsGen {
   /// File path: assets/icons/airdrop.png
   AssetGenImage get airdrop => const AssetGenImage('assets/icons/airdrop.png');
 
+  /// File path: assets/icons/autofocus.png
+  AssetGenImage get autofocus =>
+      const AssetGenImage('assets/icons/autofocus.png');
+
+  /// File path: assets/icons/autofocus_vertical.png
+  AssetGenImage get autofocusVertical =>
+      const AssetGenImage('assets/icons/autofocus_vertical.png');
+
   /// File path: assets/icons/avatar.png
   AssetGenImage get avatar => const AssetGenImage('assets/icons/avatar.png');
 
@@ -38,9 +46,16 @@ class $AssetsIconsGen {
   /// File path: assets/icons/card.png
   AssetGenImage get card => const AssetGenImage('assets/icons/card.png');
 
+  /// File path: assets/icons/example_passpor.png
+  AssetGenImage get examplePasspor =>
+      const AssetGenImage('assets/icons/example_passpor.png');
+
   /// File path: assets/icons/exchange.png
   AssetGenImage get exchange =>
       const AssetGenImage('assets/icons/exchange.png');
+
+  /// File path: assets/icons/flag.png
+  AssetGenImage get flag => const AssetGenImage('assets/icons/flag.png');
 
   /// File path: assets/icons/google.png
   AssetGenImage get google => const AssetGenImage('assets/icons/google.png');
@@ -56,15 +71,25 @@ class $AssetsIconsGen {
   AssetGenImage get increased =>
       const AssetGenImage('assets/icons/increased.png');
 
+  /// File path: assets/icons/ktp.png
+  AssetGenImage get ktp => const AssetGenImage('assets/icons/ktp.png');
+
   /// File path: assets/icons/logo.png
   AssetGenImage get logo => const AssetGenImage('assets/icons/logo.png');
 
   /// File path: assets/icons/market.png
   AssetGenImage get market => const AssetGenImage('assets/icons/market.png');
 
+  /// File path: assets/icons/mask.png
+  AssetGenImage get mask => const AssetGenImage('assets/icons/mask.png');
+
   /// File path: assets/icons/notification.png
   AssetGenImage get notification =>
       const AssetGenImage('assets/icons/notification.png');
+
+  /// File path: assets/icons/passport.png
+  AssetGenImage get passport =>
+      const AssetGenImage('assets/icons/passport.png');
 
   /// File path: assets/icons/profile.png
   AssetGenImage get profile => const AssetGenImage('assets/icons/profile.png');
@@ -79,12 +104,22 @@ class $AssetsIconsGen {
   AssetGenImage get resetEmail =>
       const AssetGenImage('assets/icons/reset_email.png');
 
+  /// File path: assets/icons/scan.png
+  AssetGenImage get scan => const AssetGenImage('assets/icons/scan.png');
+
+  /// File path: assets/icons/secure_account.png
+  AssetGenImage get secureAccount =>
+      const AssetGenImage('assets/icons/secure_account.png');
+
   /// File path: assets/icons/send.png
   AssetGenImage get send => const AssetGenImage('assets/icons/send.png');
 
   /// File path: assets/icons/settings.png
   AssetGenImage get settings =>
       const AssetGenImage('assets/icons/settings.png');
+
+  /// File path: assets/icons/sim.png
+  AssetGenImage get sim => const AssetGenImage('assets/icons/sim.png');
 
   /// File path: assets/icons/trade.png
   AssetGenImage get trade => const AssetGenImage('assets/icons/trade.png');
@@ -99,28 +134,49 @@ class $AssetsIconsGen {
   /// List of all assets
   List<AssetGenImage> get values => [
     airdrop,
+    autofocus,
+    autofocusVertical,
     avatar,
     btc,
     candlestick,
     card,
+    examplePasspor,
     exchange,
+    flag,
     google,
     home,
     iconamoonProfileFill,
     increased,
+    ktp,
     logo,
     market,
+    mask,
     notification,
+    passport,
     profile,
     protect,
     receive,
     resetEmail,
+    scan,
+    secureAccount,
     send,
     settings,
+    sim,
     trade,
     wallet,
     walletSignin,
   ];
+}
+
+class $AssetsImagesGen {
+  const $AssetsImagesGen();
+
+  /// File path: assets/images/illustration.png
+  AssetGenImage get illustration =>
+      const AssetGenImage('assets/images/illustration.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [illustration];
 }
 
 class Assets {
@@ -128,6 +184,7 @@ class Assets {
 
   static const $AssetsFontsGen fonts = $AssetsFontsGen();
   static const $AssetsIconsGen icons = $AssetsIconsGen();
+  static const $AssetsImagesGen images = $AssetsImagesGen();
 }
 
 class AssetGenImage {

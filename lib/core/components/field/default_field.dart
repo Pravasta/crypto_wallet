@@ -48,7 +48,7 @@ class DefaultField extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         color: backgroundColor,
-        borderRadius: BorderRadius.circular(7),
+        borderRadius: BorderRadius.circular(20),
       ),
       child: TextFormField(
         validator: validator,
@@ -59,21 +59,24 @@ class DefaultField extends StatelessWidget {
         textAlign: textAlign,
         cursorColor: AppColors.whiteColor,
         initialValue: intialText,
-        style: AppText.text14,
+        style: AppText.text16,
         keyboardType: inputType,
         obscureText: isObscure,
         maxLines: maxLines,
         decoration: InputDecoration(
           focusColor: AppColors.whiteColor,
-          contentPadding: const EdgeInsets.all(10),
+          contentPadding: EdgeInsets.all(20),
           hintText: hintText,
-          hintStyle: AppText.text14.copyWith(color: AppColors.greyColor),
+          hintStyle: AppText.text16.copyWith(
+            color: AppColors.whiteColor.withAlpha(125),
+          ),
           labelText: labelText,
-          labelStyle: AppText.text14,
-          floatingLabelStyle: AppText.text14,
+          labelStyle: AppText.text16,
+          floatingLabelStyle: AppText.text16,
           border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(10),
-            borderSide: const BorderSide(
+            borderRadius: BorderRadius.circular(20),
+            borderSide: BorderSide(
+              width: 0,
               color: AppColors.fieldColor,
             ),
           ),
@@ -89,7 +92,7 @@ class DefaultField extends StatelessWidget {
           ),
           fillColor: AppColors.primaryColor,
           focusedBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(10),
+            borderRadius: BorderRadius.circular(20),
             borderSide: const BorderSide(
               color: AppColors.primaryColor,
             ),
