@@ -4,6 +4,7 @@ class AppColors {
   // PRIMARY
   static const Color primaryColor = Color(0xffFFC92C);
   static const Color backgroundColor = Color(0xff161730);
+  static const Color bottomNavigationBarColor = Color(0xff1f3a4e);
   static const Color whiteColor = Color(0xffFFFFFF);
   static const Color blackColor = Color(0xff000000);
   static const Color fieldColor = Color(0xff232436);

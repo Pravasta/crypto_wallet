@@ -22,9 +22,6 @@ class $AssetsFontsGen {
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
-  /// File path: assets/icons/airdrop.png
-  AssetGenImage get airdrop => const AssetGenImage('assets/icons/airdrop.png');
-
   /// File path: assets/icons/autofocus.png
   AssetGenImage get autofocus =>
       const AssetGenImage('assets/icons/autofocus.png');
@@ -53,6 +50,10 @@ class $AssetsIconsGen {
   /// File path: assets/icons/exchange.png
   AssetGenImage get exchange =>
       const AssetGenImage('assets/icons/exchange.png');
+
+  /// File path: assets/icons/favorite.png
+  AssetGenImage get favorite =>
+      const AssetGenImage('assets/icons/favorite.png');
 
   /// File path: assets/icons/flag.png
   AssetGenImage get flag => const AssetGenImage('assets/icons/flag.png');
@@ -121,6 +122,13 @@ class $AssetsIconsGen {
   /// File path: assets/icons/sim.png
   AssetGenImage get sim => const AssetGenImage('assets/icons/sim.png');
 
+  /// File path: assets/icons/small_logo.png
+  AssetGenImage get smallLogo =>
+      const AssetGenImage('assets/icons/small_logo.png');
+
+  /// File path: assets/icons/sol.png
+  AssetGenImage get sol => const AssetGenImage('assets/icons/sol.png');
+
   /// File path: assets/icons/trade.png
   AssetGenImage get trade => const AssetGenImage('assets/icons/trade.png');
 
@@ -131,9 +139,11 @@ class $AssetsIconsGen {
   AssetGenImage get walletSignin =>
       const AssetGenImage('assets/icons/wallet_signin.png');
 
+  /// File path: assets/icons/xrp.png
+  AssetGenImage get xrp => const AssetGenImage('assets/icons/xrp.png');
+
   /// List of all assets
   List<AssetGenImage> get values => [
-    airdrop,
     autofocus,
     autofocusVertical,
     avatar,
@@ -142,6 +152,7 @@ class $AssetsIconsGen {
     card,
     examplePasspor,
     exchange,
+    favorite,
     flag,
     google,
     home,
@@ -162,9 +173,12 @@ class $AssetsIconsGen {
     send,
     settings,
     sim,
+    smallLogo,
+    sol,
     trade,
     wallet,
     walletSignin,
+    xrp,
   ];
 }
 

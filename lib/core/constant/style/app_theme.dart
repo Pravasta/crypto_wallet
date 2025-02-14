@@ -29,7 +29,7 @@ class AppTheme {
     progressIndicatorTheme:
         const ProgressIndicatorThemeData(color: AppColors.primaryColor),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
-      backgroundColor: AppColors.backgroundColor,
+      backgroundColor: AppColors.buttonDarkColor,
       type: BottomNavigationBarType.fixed,
       selectedItemColor: AppColors.primaryColor,
       selectedLabelStyle: AppText.text14.copyWith(fontWeight: FontWeight.bold),
