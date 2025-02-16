@@ -15,6 +15,7 @@ import 'package:crypto_wallet/features/auth/view/register/set_up_two_step_verifi
 import 'package:crypto_wallet/features/auth/view/register/submit_document_page.dart';
 import 'package:crypto_wallet/features/auth/view/register/verification_succes_page.dart';
 import 'package:crypto_wallet/features/main_page/view/main_page.dart';
+import 'package:crypto_wallet/features/market/view/market_search_page.dart';
 import 'package:crypto_wallet/features/splash_intro/intro_page.dart';
 import 'package:flutter/material.dart';
 
@@ -136,6 +137,11 @@ class RoutesHandler {
       case RoutesName.verificationSuccess:
         return MaterialPageRoute(
           builder: (context) => VerificationSuccesPage(),
+          settings: settings,
+        );
+      case RoutesName.searchMarket:
+        return MaterialPageRoute(
+          builder: (context) => MarketSearchPage(),
           settings: settings,
         );
 

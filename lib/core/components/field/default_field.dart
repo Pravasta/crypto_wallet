@@ -16,6 +16,7 @@ class DefaultField extends StatelessWidget {
     this.readOnly = false,
     this.controller,
     this.onChanged,
+    this.onTap,
     this.intialText,
     this.isObscure = false,
     this.maxLines = 1,
@@ -23,6 +24,7 @@ class DefaultField extends StatelessWidget {
     this.backgroundColor = AppColors.fieldColor,
     this.textAlign = TextAlign.start,
     this.validator,
+    this.padding = 20,
   });
 
   final String? hintText;
@@ -30,11 +32,13 @@ class DefaultField extends StatelessWidget {
   final Widget? suffixIcon;
   final BoxConstraints? suffixIconConstraints;
   final Widget? prefixIcon;
+  final double? padding;
   final BoxConstraints? prefixIconConstraints;
   final bool isEnabled;
   final bool readOnly;
   final TextEditingController? controller;
   final ValueChanged<String>? onChanged;
+  final VoidCallback? onTap;
   final String? intialText;
   final bool isObscure;
   final int maxLines;
@@ -45,56 +49,59 @@ class DefaultField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: backgroundColor,
-        borderRadius: BorderRadius.circular(20),
-      ),
-      child: TextFormField(
-        validator: validator,
-        enabled: isEnabled,
-        readOnly: readOnly,
-        controller: controller,
-        onChanged: onChanged ?? (value) {},
-        textAlign: textAlign,
-        cursorColor: AppColors.whiteColor,
-        initialValue: intialText,
-        style: AppText.text16,
-        keyboardType: inputType,
-        obscureText: isObscure,
-        maxLines: maxLines,
-        decoration: InputDecoration(
-          focusColor: AppColors.whiteColor,
-          contentPadding: EdgeInsets.all(20),
-          hintText: hintText,
-          hintStyle: AppText.text16.copyWith(
-            color: AppColors.whiteColor.withAlpha(125),
-          ),
-          labelText: labelText,
-          labelStyle: AppText.text16,
-          floatingLabelStyle: AppText.text16,
-          border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(20),
-            borderSide: BorderSide(
-              width: 0,
-              color: AppColors.fieldColor,
+    return GestureDetector(
+      onTap: onTap ?? () {},
+      child: Container(
+        decoration: BoxDecoration(
+          color: backgroundColor,
+          borderRadius: BorderRadius.circular(10),
+        ),
+        child: TextFormField(
+          validator: validator,
+          enabled: isEnabled,
+          readOnly: readOnly,
+          controller: controller,
+          onChanged: onChanged ?? (value) {},
+          textAlign: textAlign,
+          cursorColor: AppColors.whiteColor,
+          initialValue: intialText,
+          style: AppText.text16,
+          keyboardType: inputType,
+          obscureText: isObscure,
+          maxLines: maxLines,
+          decoration: InputDecoration(
+            focusColor: AppColors.whiteColor,
+            contentPadding: EdgeInsets.all(padding!),
+            hintText: hintText,
+            hintStyle: AppText.text16.copyWith(
+              color: AppColors.whiteColor.withAlpha(125),
             ),
-          ),
-          prefixIcon: prefixIcon,
-          prefixIconConstraints: prefixIconConstraints,
-          suffixIcon: suffixIcon,
-          suffixIconConstraints: suffixIconConstraints,
-          disabledBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(10),
-            borderSide: const BorderSide(
-              color: AppColors.fieldColor,
+            labelText: labelText,
+            labelStyle: AppText.text16,
+            floatingLabelStyle: AppText.text16,
+            border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(10),
+              borderSide: BorderSide(
+                width: 0,
+                color: AppColors.fieldColor,
+              ),
             ),
-          ),
-          fillColor: AppColors.primaryColor,
-          focusedBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(20),
-            borderSide: const BorderSide(
-              color: AppColors.primaryColor,
+            prefixIcon: prefixIcon,
+            prefixIconConstraints: prefixIconConstraints,
+            suffixIcon: suffixIcon,
+            suffixIconConstraints: suffixIconConstraints,
+            disabledBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(10),
+              borderSide: const BorderSide(
+                color: AppColors.fieldColor,
+              ),
+            ),
+            fillColor: AppColors.primaryColor,
+            focusedBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(10),
+              borderSide: const BorderSide(
+                color: AppColors.primaryColor,
+              ),
             ),
           ),
         ),

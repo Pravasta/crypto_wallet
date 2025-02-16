@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import '../../../core/constant/style/app_colors.dart';
 import '../../../core/constant/style/app_text.dart';
 import 'widgets/market_mover_card.dart';
+import 'widgets/news_card.dart';
 import 'widgets/portfolio_card.dart';
 
 class HomePage extends StatelessWidget {
@@ -209,9 +210,9 @@ class HomePage extends StatelessWidget {
               child: Padding(
                 padding: EdgeInsets.only(top: 10, right: 10, left: 10),
                 child: Column(
-                  children: HomeModel.listPortfolio
+                  children: HomeModel.listNews
                       .map(
-                        (e) => PortfolioCard(data: e),
+                        (e) => NewsCard(data: e),
                       )
                       .toList(),
                 ),

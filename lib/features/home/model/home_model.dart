@@ -1,4 +1,5 @@
 import 'package:crypto_wallet/core/constant/other/assets.gen.dart';
+import 'package:crypto_wallet/core/constant/other/text.dart';
 
 class HomeModel {
   static final List<Map<String, dynamic>> listMarketMovers = [
@@ -41,7 +42,7 @@ class HomeModel {
       'name': 'Bitcoin',
       'sort_name': 'BTC',
       'icon': Assets.icons.btc.path,
-      'price': 1270.10,
+      'price_now': 1270.10,
       'increased': 2.76,
     },
     {
@@ -64,6 +65,44 @@ class HomeModel {
       'icon': Assets.icons.btc.path,
       'price_now': 30113.80,
       'increased': 2.76,
+    },
+  ];
+
+  static final List<Map<String, dynamic>> listNews = [
+    {
+      'name': 'Decrypt',
+      'time': 18,
+      'coin_name': 'USD Coin',
+      'image': Assets.images.newsImage.path,
+      'description': RandomText.randomText,
+    },
+    {
+      'name': 'Decrypt',
+      'time': 19,
+      'coin_name': 'Bitcoin',
+      'image': Assets.images.newsImage.path,
+      'description': RandomText.randomText,
+    },
+    {
+      'name': 'Decrypt',
+      'time': 20,
+      'coin_name': 'Bitcoin',
+      'image': Assets.images.newsImage.path,
+      'description': RandomText.randomText,
+    },
+    {
+      'name': 'Decrypt',
+      'time': 21,
+      'coin_name': 'ATH',
+      'image': Assets.images.newsImage.path,
+      'description': RandomText.randomText,
+    },
+    {
+      'name': 'Decrypt',
+      'time': 22,
+      'coin_name': 'Solana',
+      'image': Assets.images.newsImage.path,
+      'description': RandomText.randomText,
     },
   ];
 }

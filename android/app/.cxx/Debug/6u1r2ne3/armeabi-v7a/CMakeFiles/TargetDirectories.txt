@@ -1,0 +1,2 @@
+C:/Users/MSI/Desktop/flutter_project/crypto_wallet/android/app/.cxx/Debug/6u1r2ne3/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/MSI/Desktop/flutter_project/crypto_wallet/android/app/.cxx/Debug/6u1r2ne3/armeabi-v7a/CMakeFiles/rebuild_cache.dir

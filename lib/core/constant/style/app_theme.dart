@@ -37,5 +37,14 @@ class AppTheme {
       unselectedLabelStyle: AppText.text14
           .copyWith(color: AppColors.greyColor, fontWeight: FontWeight.bold),
     ),
+    tabBarTheme: TabBarThemeData(
+      labelStyle: AppText.text14.copyWith(
+        fontWeight: FontWeight.bold,
+      ),
+      unselectedLabelStyle: AppText.text14.copyWith(
+        color: AppColors.greyColor,
+        fontWeight: FontWeight.bold,
+      ),
+    ),
   );
 }

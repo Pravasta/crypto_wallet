@@ -1,3 +1,4 @@
+import 'package:crypto_wallet/core/components/chart/small_line_chart.dart';
 import 'package:crypto_wallet/core/constant/style/app_colors.dart';
 import 'package:crypto_wallet/core/constant/style/app_text.dart';
 import 'package:crypto_wallet/core/extensions/build_context_ext.dart';
@@ -56,8 +57,7 @@ class MarketMoverCard extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
-          SizedBox(height: 60),
-          // UNTUK CHART
+          SmallLineChart(),
           Text(
             '24H Vol.',
             style: AppText.text14.copyWith(

@@ -33,15 +33,25 @@ class $AssetsIconsGen {
   /// File path: assets/icons/avatar.png
   AssetGenImage get avatar => const AssetGenImage('assets/icons/avatar.png');
 
+  /// File path: assets/icons/brush.png
+  AssetGenImage get brush => const AssetGenImage('assets/icons/brush.png');
+
   /// File path: assets/icons/btc.png
   AssetGenImage get btc => const AssetGenImage('assets/icons/btc.png');
 
-  /// File path: assets/icons/candlestick.png
-  AssetGenImage get candlestick =>
-      const AssetGenImage('assets/icons/candlestick.png');
+  /// File path: assets/icons/candle_stick.png
+  AssetGenImage get candleStick =>
+      const AssetGenImage('assets/icons/candle_stick.png');
 
   /// File path: assets/icons/card.png
   AssetGenImage get card => const AssetGenImage('assets/icons/card.png');
+
+  /// File path: assets/icons/card_share.png
+  AssetGenImage get cardShare =>
+      const AssetGenImage('assets/icons/card_share.png');
+
+  /// File path: assets/icons/deposit.png
+  AssetGenImage get deposit => const AssetGenImage('assets/icons/deposit.png');
 
   /// File path: assets/icons/example_passpor.png
   AssetGenImage get examplePasspor =>
@@ -55,8 +65,14 @@ class $AssetsIconsGen {
   AssetGenImage get favorite =>
       const AssetGenImage('assets/icons/favorite.png');
 
+  /// File path: assets/icons/filter.png
+  AssetGenImage get filter => const AssetGenImage('assets/icons/filter.png');
+
   /// File path: assets/icons/flag.png
   AssetGenImage get flag => const AssetGenImage('assets/icons/flag.png');
+
+  /// File path: assets/icons/full.png
+  AssetGenImage get full => const AssetGenImage('assets/icons/full.png');
 
   /// File path: assets/icons/google.png
   AssetGenImage get google => const AssetGenImage('assets/icons/google.png');
@@ -74,6 +90,9 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/ktp.png
   AssetGenImage get ktp => const AssetGenImage('assets/icons/ktp.png');
+
+  /// File path: assets/icons/line.png
+  AssetGenImage get line => const AssetGenImage('assets/icons/line.png');
 
   /// File path: assets/icons/logo.png
   AssetGenImage get logo => const AssetGenImage('assets/icons/logo.png');
@@ -108,6 +127,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/scan.png
   AssetGenImage get scan => const AssetGenImage('assets/icons/scan.png');
 
+  /// File path: assets/icons/search.png
+  AssetGenImage get search => const AssetGenImage('assets/icons/search.png');
+
   /// File path: assets/icons/secure_account.png
   AssetGenImage get secureAccount =>
       const AssetGenImage('assets/icons/secure_account.png');
@@ -126,8 +148,15 @@ class $AssetsIconsGen {
   AssetGenImage get smallLogo =>
       const AssetGenImage('assets/icons/small_logo.png');
 
+  /// File path: assets/icons/small_scan.png
+  AssetGenImage get smallScan =>
+      const AssetGenImage('assets/icons/small_scan.png');
+
   /// File path: assets/icons/sol.png
   AssetGenImage get sol => const AssetGenImage('assets/icons/sol.png');
+
+  /// File path: assets/icons/target.png
+  AssetGenImage get target => const AssetGenImage('assets/icons/target.png');
 
   /// File path: assets/icons/trade.png
   AssetGenImage get trade => const AssetGenImage('assets/icons/trade.png');
@@ -139,6 +168,10 @@ class $AssetsIconsGen {
   AssetGenImage get walletSignin =>
       const AssetGenImage('assets/icons/wallet_signin.png');
 
+  /// File path: assets/icons/withdraw.png
+  AssetGenImage get withdraw =>
+      const AssetGenImage('assets/icons/withdraw.png');
+
   /// File path: assets/icons/xrp.png
   AssetGenImage get xrp => const AssetGenImage('assets/icons/xrp.png');
 
@@ -147,18 +180,24 @@ class $AssetsIconsGen {
     autofocus,
     autofocusVertical,
     avatar,
+    brush,
     btc,
-    candlestick,
+    candleStick,
     card,
+    cardShare,
+    deposit,
     examplePasspor,
     exchange,
     favorite,
+    filter,
     flag,
+    full,
     google,
     home,
     iconamoonProfileFill,
     increased,
     ktp,
+    line,
     logo,
     market,
     mask,
@@ -169,15 +208,19 @@ class $AssetsIconsGen {
     receive,
     resetEmail,
     scan,
+    search,
     secureAccount,
     send,
     settings,
     sim,
     smallLogo,
+    smallScan,
     sol,
+    target,
     trade,
     wallet,
     walletSignin,
+    withdraw,
     xrp,
   ];
 }
@@ -189,8 +232,12 @@ class $AssetsImagesGen {
   AssetGenImage get illustration =>
       const AssetGenImage('assets/images/illustration.png');
 
+  /// File path: assets/images/news_image.png
+  AssetGenImage get newsImage =>
+      const AssetGenImage('assets/images/news_image.png');
+
   /// List of all assets
-  List<AssetGenImage> get values => [illustration];
+  List<AssetGenImage> get values => [illustration, newsImage];
 }
 
 class Assets {
