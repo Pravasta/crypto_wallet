@@ -50,6 +50,9 @@ class $AssetsIconsGen {
   AssetGenImage get cardShare =>
       const AssetGenImage('assets/icons/card_share.png');
 
+  /// File path: assets/icons/chart.png
+  AssetGenImage get chart => const AssetGenImage('assets/icons/chart.png');
+
   /// File path: assets/icons/deposit.png
   AssetGenImage get deposit => const AssetGenImage('assets/icons/deposit.png');
 
@@ -74,8 +77,14 @@ class $AssetsIconsGen {
   /// File path: assets/icons/full.png
   AssetGenImage get full => const AssetGenImage('assets/icons/full.png');
 
+  /// File path: assets/icons/gift.png
+  AssetGenImage get gift => const AssetGenImage('assets/icons/gift.png');
+
   /// File path: assets/icons/google.png
   AssetGenImage get google => const AssetGenImage('assets/icons/google.png');
+
+  /// File path: assets/icons/history.png
+  AssetGenImage get history => const AssetGenImage('assets/icons/history.png');
 
   /// File path: assets/icons/home.png
   AssetGenImage get home => const AssetGenImage('assets/icons/home.png');
@@ -90,6 +99,9 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/ktp.png
   AssetGenImage get ktp => const AssetGenImage('assets/icons/ktp.png');
+
+  /// File path: assets/icons/limits.png
+  AssetGenImage get limits => const AssetGenImage('assets/icons/limits.png');
 
   /// File path: assets/icons/line.png
   AssetGenImage get line => const AssetGenImage('assets/icons/line.png');
@@ -106,6 +118,10 @@ class $AssetsIconsGen {
   /// File path: assets/icons/notification.png
   AssetGenImage get notification =>
       const AssetGenImage('assets/icons/notification.png');
+
+  /// File path: assets/icons/notifications.png
+  AssetGenImage get notifications =>
+      const AssetGenImage('assets/icons/notifications.png');
 
   /// File path: assets/icons/passport.png
   AssetGenImage get passport =>
@@ -134,12 +150,20 @@ class $AssetsIconsGen {
   AssetGenImage get secureAccount =>
       const AssetGenImage('assets/icons/secure_account.png');
 
+  /// File path: assets/icons/security_small.png
+  AssetGenImage get securitySmall =>
+      const AssetGenImage('assets/icons/security_small.png');
+
   /// File path: assets/icons/send.png
   AssetGenImage get send => const AssetGenImage('assets/icons/send.png');
 
   /// File path: assets/icons/settings.png
   AssetGenImage get settings =>
       const AssetGenImage('assets/icons/settings.png');
+
+  /// File path: assets/icons/share_with_friend.png
+  AssetGenImage get shareWithFriend =>
+      const AssetGenImage('assets/icons/share_with_friend.png');
 
   /// File path: assets/icons/sim.png
   AssetGenImage get sim => const AssetGenImage('assets/icons/sim.png');
@@ -155,8 +179,14 @@ class $AssetsIconsGen {
   /// File path: assets/icons/sol.png
   AssetGenImage get sol => const AssetGenImage('assets/icons/sol.png');
 
+  /// File path: assets/icons/support.png
+  AssetGenImage get support => const AssetGenImage('assets/icons/support.png');
+
   /// File path: assets/icons/target.png
   AssetGenImage get target => const AssetGenImage('assets/icons/target.png');
+
+  /// File path: assets/icons/theme.png
+  AssetGenImage get theme => const AssetGenImage('assets/icons/theme.png');
 
   /// File path: assets/icons/trade.png
   AssetGenImage get trade => const AssetGenImage('assets/icons/trade.png');
@@ -185,6 +215,7 @@ class $AssetsIconsGen {
     candleStick,
     card,
     cardShare,
+    chart,
     deposit,
     examplePasspor,
     exchange,
@@ -192,16 +223,20 @@ class $AssetsIconsGen {
     filter,
     flag,
     full,
+    gift,
     google,
+    history,
     home,
     iconamoonProfileFill,
     increased,
     ktp,
+    limits,
     line,
     logo,
     market,
     mask,
     notification,
+    notifications,
     passport,
     profile,
     protect,
@@ -210,13 +245,17 @@ class $AssetsIconsGen {
     scan,
     search,
     secureAccount,
+    securitySmall,
     send,
     settings,
+    shareWithFriend,
     sim,
     smallLogo,
     smallScan,
     sol,
+    support,
     target,
+    theme,
     trade,
     wallet,
     walletSignin,

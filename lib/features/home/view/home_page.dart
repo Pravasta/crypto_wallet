@@ -1,3 +1,5 @@
+import 'package:crypto_wallet/core/common/routes/navigation.dart';
+import 'package:crypto_wallet/core/common/routes/routes_name.dart';
 import 'package:crypto_wallet/core/constant/other/assets.gen.dart';
 import 'package:crypto_wallet/core/extensions/build_context_ext.dart';
 import 'package:crypto_wallet/features/home/model/home_model.dart';
@@ -21,10 +23,13 @@ class HomePage extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Image.asset(
-              Assets.icons.profile.path,
-              scale: 3.5,
-              color: AppColors.greyColor,
+            GestureDetector(
+              onTap: () => Navigation.pushName(RoutesName.profilePage),
+              child: Image.asset(
+                Assets.icons.profile.path,
+                scale: 3.5,
+                color: AppColors.greyColor,
+              ),
             ),
             Row(
               children: [
@@ -43,10 +48,13 @@ class HomePage extends StatelessWidget {
                 ),
               ],
             ),
-            Image.asset(
-              Assets.icons.settings.path,
-              scale: 3.5,
-              color: AppColors.greyColor,
+            GestureDetector(
+              onTap: () => Navigation.pushName(RoutesName.settingPage),
+              child: Image.asset(
+                Assets.icons.settings.path,
+                scale: 3.5,
+                color: AppColors.greyColor,
+              ),
             ),
           ],
         ),

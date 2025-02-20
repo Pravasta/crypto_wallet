@@ -20,5 +20,8 @@ class RoutesName {
   static const String selfieVerification = '/selfie-verification';
   static const String selfieCameraVerification = '/selfie-camera-verification';
   static const String verificationSuccess = '/verification-success';
-  static const String searchMarket = '/search_market';
+  static const String searchMarket = '/search-market';
+  static const String tradingChart = '/trading-chart';
+  static const String settingPage = '/setting-page';
+  static const String profilePage = '/profile-page';
 }

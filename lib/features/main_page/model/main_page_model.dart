@@ -2,8 +2,10 @@ import 'package:crypto_wallet/core/constant/other/assets.gen.dart';
 import 'package:crypto_wallet/features/favorite/view/favorite_page.dart';
 import 'package:crypto_wallet/features/home/view/home_page.dart';
 import 'package:crypto_wallet/features/market/view/market_page.dart';
-import 'package:crypto_wallet/features/trade/view/trade_page.dart';
+
 import 'package:crypto_wallet/features/wallet/view/wallet_page.dart';
+
+import '../../trade/view/trade_page.dart';
 
 class MainPageModel {
   static final List<Map<String, dynamic>> listBottomNavBar = [

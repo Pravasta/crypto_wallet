@@ -16,7 +16,10 @@ import 'package:crypto_wallet/features/auth/view/register/submit_document_page.d
 import 'package:crypto_wallet/features/auth/view/register/verification_succes_page.dart';
 import 'package:crypto_wallet/features/main_page/view/main_page.dart';
 import 'package:crypto_wallet/features/market/view/market_search_page.dart';
+import 'package:crypto_wallet/features/profile/view/profile_page.dart';
+import 'package:crypto_wallet/features/setting/view/setting_page.dart';
 import 'package:crypto_wallet/features/splash_intro/intro_page.dart';
+import 'package:crypto_wallet/features/trade/view/trading_page.dart';
 import 'package:flutter/material.dart';
 
 import '../../../features/splash_intro/splash_page.dart';
@@ -66,12 +69,14 @@ class RoutesHandler {
         );
       case RoutesName.register:
         return MaterialPageRoute(
-          builder: (context) => RegisterPage(),
+          builder: (context) => RegisterView(),
           settings: settings,
         );
       case RoutesName.emailVerification:
+        final email = settings.arguments;
+        if (email == null || email is! String) return _emptyPage;
         return MaterialPageRoute(
-          builder: (context) => EmailVerificationPage(),
+          builder: (context) => EmailVerificationPage(email: email),
           settings: settings,
         );
       case RoutesName.forgotPassword:
@@ -142,6 +147,21 @@ class RoutesHandler {
       case RoutesName.searchMarket:
         return MaterialPageRoute(
           builder: (context) => MarketSearchPage(),
+          settings: settings,
+        );
+      case RoutesName.tradingChart:
+        return MaterialPageRoute(
+          builder: (context) => TradingPage(),
+          settings: settings,
+        );
+      case RoutesName.settingPage:
+        return MaterialPageRoute(
+          builder: (context) => SettingPage(),
+          settings: settings,
+        );
+      case RoutesName.profilePage:
+        return MaterialPageRoute(
+          builder: (context) => ProfilePage(),
           settings: settings,
         );
 
